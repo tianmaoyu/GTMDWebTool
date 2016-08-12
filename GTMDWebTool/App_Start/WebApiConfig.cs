@@ -10,8 +10,10 @@ namespace GTMDWebTool
 {
     public static class WebApiConfig
     {
+
         public static void Register(HttpConfiguration config)
         {
+            //config.Formatters.JsonFormatter.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
             // Web API 配置和服务
             // 将 Web API 配置为仅使用不记名令牌身份验证。
             config.SuppressDefaultHostAuthentication();

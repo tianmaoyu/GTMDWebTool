@@ -1,0 +1,78 @@
+﻿@{ 
+    Layout = null;
+  }
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/bootstrap-theme.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <style>
+        .login-container{
+            position: absolute;
+            width:360px;
+            height:540px;
+            left: 50%;
+            top: 50%;
+            margin-left:-180px;
+            margin-top:-270px;
+        }
+        /*.form-control-feedback{
+            left:0;
+        }*/
+    </style>
+</head>
+<body class="login" style="background-color:gray">
+   
+    <div class="container login-container"style="background-color:white" >
+      <form >
+          <div class="logo" style="height:60%">
+              <img class="img-circle center-block" src="~/fonts/easyicon.png" />
+          </div>
+          <h3>请输入你的帐号和密码</h3>
+          <div class="form-group has-feedback">
+               <label>用户名</label>
+               <span class="glyphicon glyphicon-user form-control-feedback"></span>
+               <input type="text" id="user-name" class="form-control" placeholder="用户名">
+               <div class="alert alert-danger hidden "style="line-height:3px;margin-bottom:0px" role="alert">
+                   <strong>错误：</strong>用户为名不能为空
+               </div>
+          </div>
+          <div class="form-group has-feedback">
+              <label>密码</label>
+              <input type="password" id="user-password" class="form-control" placeholder="密码">
+              <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+              <div style="line-height:3px;margin-bottom:0px" class="alert alert-danger hidden" role="alert">
+                  <strong>错误：</strong>不能为空！
+              </div>
+          </div>
+          <br>
+          <div class="form-group has-feedback">
+              <div class="row">
+                  <div class="col-md-5 ">
+                      <input type="text" id="verifycode" class="form-control" style="padding-right:12px" placeholder="验证码">
+                  </div>
+                  <div class="col-md-3">
+                      <img class="center-block" src="#">
+                  </div>
+                  <div class="col-md-4">
+                      <button type="submit" class="btn btn-default pull-right">
+                          登录
+                          <span class="glyphicon glyphicon-circle-arrow-right"></span>
+                      </button>
+                  </div>
+              </div>
+          </div>
+          <hr>
+          <h4>忘记密码？</h4>
+          <hr>
+          <address >
+             <a href="mailto:tianmaoyu@xxx.com">请发送邮箱到：tianmaoyu@xxx.com申请从新设置密码</a>
+          </address>
+      </form>
+    </div>
+    <script src="~/Scripts/jquery-3.1.0.js"></script>
+    <script src="~/Scripts/bootstrap.js"></script>
+</body>
+</html>

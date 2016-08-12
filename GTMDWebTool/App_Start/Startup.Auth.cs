@@ -46,7 +46,7 @@ namespace GTMDWebTool
             // 使应用程序可以使用不记名令牌来验证用户身份
             app.UseOAuthBearerTokens(OAuthOptions);
 
-            // 取消注释以下行可允许使用第三方登录提供程序登录
+            ////取消注释以下行可允许使用第三方登录提供程序登录
             //app.UseMicrosoftAccountAuthentication(
             //    clientId: "",
             //    clientSecret: "");
