@@ -1,0 +1,78 @@
+﻿@{ 
+    Layout = null;
+ }
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>header</title>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+</head>
+<body>
+   
+    <nav class="nav navbar-default" role="navigation">
+        <div class="navbar-header">
+            <a class="navbar-brand">
+               Header
+            </a>
+        </div>
+        <div >
+           <ul class="nav navbar-nav navbar-right">
+               <li class="dropdown">
+                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                       <span class="glyphicon glyphicon-alert" style="color:red;font-size:17px"></span>
+                       <span id="warning-badge" class="badge ">6</span>
+                       <i class="caret"></i>
+                   </a>
+                   <ul class="dropdown-menu">
+                       <li>
+                           <a href="#">
+                               <span style="height:20px;" class="label label-success"><span class="glyphicon glyphicon-plus"></span></span>
+                               新的用户注册
+                               <b>刚刚</b>
+                           </a>
+                       </li>
+                       <li>
+                           <a href="#">
+                               <span class="label label-danger"><i class="glyphicon glyphicon-flash"></i></span>
+                               <span id="flash-info">三号主机出现异常</span>
+                           </a>
+                       </li>
+                       <li> <a href="#">下拉菜单</a></li>
+                   </ul>
+               </li>
+               <li class="dropdown" id="accountmenu">
+                   <a class="dropdown-toggle" data-toggle="dropdown" href="#">Tutorials<b class="caret"></b></a>
+                   <ul class="dropdown-menu">
+                       <li><a href="#">PHP</a></li>
+                       <li><a href="#">MySQL</a></li>
+                       <li class="divider"></li>
+                       <li><a href="#">JavaScript</a></li>
+                       <li><a href="#">HTML5</a></li>
+                   </ul>
+               </li>
+               <li class="active"><a href="#">java</a></li>
+               <li><a  href="#"> c#</a></li>
+               <li><a  href="#">python</a></li>
+               <li class="dropdown">
+                   <a href="" class="dropdown-toggle" data-toggle="dropdown">
+                       <img class="" />Admin
+                       <b class="caret"></b>
+                   </a>
+                   <ul class="dropdown-menu">
+                       <li><a href="#"><i class="glyphicon glyphicon-user"></i> 我的信息</a></li>
+                       <li><a href="#"><i class="glyphicon glyphicon-calendar"></i> 我的日历</a></li>
+                       <li><a href="#"><i class="glyphicon  glyphicon-edit"></i> 我的任务</a></li>
+                       <li class="divider"></li>
+                       <li><a href="#"><i class="glyphicon glyphicon-rub alert-danger"></i> 修改密码</a></li>
+                       <li><a href="#"><i class="glyphicon glyphicon-log-out btn-warning"></i> 退出系统</a></li>
+                   </ul>
+               </li>
+               <li><a></a></li>
+           </ul>
+        </div>
+    </nav>
+
+    <script src="~/Scripts/jquery-3.1.0.js"></script>
+    <script src="~/Scripts/bootstrap.js"></script>
+</body>
+</html>

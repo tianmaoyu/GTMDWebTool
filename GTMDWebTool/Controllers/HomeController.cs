@@ -22,5 +22,10 @@ namespace GTMDWebTool.Controllers
             ViewBag.Title="Login Page";
             return View();
         }
+        public ActionResult Header()
+        {
+            ViewBag.Title = "Login Page";
+            return View();
+        }
     }
 }
